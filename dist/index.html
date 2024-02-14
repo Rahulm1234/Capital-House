@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Section_test</title>
+  </head>
+  <body>
+    <!-- Section for Navbar and hero -->
+    <section
+      class="container mx-auto w-full max-w-[1920px] h-screen max-h-[1080px] bg-[#4475F2]"
+      id="Section_one_nav_hero"
+    >
+      <!-- Outer?main div for Navbar and Hero section -->
+      <div class="">
+        <!-- Nav for navbar -->
+        <nav class="flex gap-4 flex-row justify-around py-6 px-8">
+          <!-- 1st Div for left side logo -->
+          <div class="flex flex-row">
+            <img src="../res/logo-left.svg" alt="logo-left" />
+            <h1
+              class="text-3xl sm:flex sm:flex-row text-white hidden cursor-pointer"
+            >
+              Capital <span class="text-[#FFA800]">House</span>
+            </h1>
+          </div>
+
+          <!-- 1st Div for left side logo Ends here-->
+          <!-- 2nd div for nav menu list -->
+          <div>
+            <ul class="md:flex flex-row hidden text-white">
+              <li class="mx-[10px] hover:text-[#FFA800] cursor-pointer text-xl">
+                Feature
+              </li>
+              <li class="mx-[10px] hover:text-[#FFA800] cursor-pointer text-xl">
+                Service
+              </li>
+              <li class="mx-[10px] hover:text-[#FFA800] cursor-pointer text-xl">
+                Review
+              </li>
+              <li class="mx-[10px] hover:text-[#FFA800] cursor-pointer text-xl">
+                Location
+              </li>
+            </ul>
+          </div>
+          <!-- 2nd div for nav menu list Ends here-->
+          <!-- 3rd Div for Login Button -->
+          <div class="hidden items-center md:block">
+            <p
+              class="px-4 py-2 md:px-4 text-nowrap bg-white hover:bg-yellow-500 hover:text-black rounded-[10px] cursor-pointer shadow-md shadow-black"
+            >
+              <a href="">Login</a>
+            </p>
+          </div>
+
+          <div class="md:hidden">
+            <div class="space-y-1 rotate-180" id="hamburger">
+              <div class="w-6 h-0.5 bg-white"></div>
+              <div class="w-6 h-0.5 bg-white"></div>
+              <div class="w-6 h-0.5 bg-white"></div>
+            </div>
+
+            <ul
+              class="text-black flex flex-col justify-start bg-white gap-5 h-screen fixed z-20 p-10 items-start top-0 left-0 -translate-x-full transition-all shadow-sm shadow-black"
+              id="mobile-nav"
+            >
+              <li><a href="">Feature</a></li>
+              <li><a href="">Service</a></li>
+              <li><a href="">Review</a></li>
+              <li><a href="">Location</a></li>
+              <li><a href="">Login/Sign Up</a></li>
+            </ul>
+          </div>
+          <!-- 3rd Div for Login Button Ends here-->
+        </nav>
+        <!-- Nav for navbar Ends here-->
+
+        <!-- 2nd Outer/Main div for Hero Section -->
+        <div
+          class="flex flex-col py-8 px-6 md:flex-row md:items-center lg:flex-row lg:items-center justify-around"
+        >
+          <!-- 1st div for left side Description and buttons -->
+          <div class="">
+            <h1 class="text-6xl font-bold text-white">
+              Trading with <br />
+              Halal instruments <br />
+              in minutes
+            </h1>
+            <p class="text-lg text-white">
+              Trade on more than 200 re-owned markets
+            </p>
+          </div>
+          <!-- 1st div for left side Description and buttons Ends here-->
+
+          <!-- 2nd div for right side image -->
+          <div class="">
+            <img
+              src="../res/right-side-hero-image.svg"
+              alt="right-side-hero-image"
+            />
+          </div>
+          <!-- 2nd div for right side image Ends here-->
+        </div>
+        <!-- 2nd Outer/Main div for Hero Section Ends here-->
+      </div>
+      <!-- Outer?main div for Navbar and Hero section Ends here-->
+    </section>
+    <!-- Section for Navbar and hero Ends here-->
+
+    <!-- Script -->
+    <script>
+      let hamburger = document.getElementById("hamburger");
+      let mobileNav = document.getElementById("mobile-nav");
+      console.log(hamburger);
+
+      hamburger.addEventListener("click", () => {
+        mobileNav.classList.toggle("-translate-x-full");
+      });
+      console.log(hamburger);
+      console.log(mobileNav);
+    </script>
+
+    <!-- Script Ends here-->
+  </body>
+</html>
