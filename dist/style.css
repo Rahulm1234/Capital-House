@@ -628,6 +628,10 @@ video {
   margin-right: auto;
 }
 
+.block {
+  display: block;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -744,8 +748,16 @@ video {
   justify-content: space-around;
 }
 
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-4 {
@@ -754,6 +766,14 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .space-y-1 > :not([hidden]) ~ :not([hidden]) {
@@ -782,9 +802,18 @@ video {
   border-color: transparent;
 }
 
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .bg-\[\#4475F2\] {
   --tw-bg-opacity: 1;
   background-color: rgb(68 117 242 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-white {
@@ -796,8 +825,16 @@ video {
   padding: 2.5rem;
 }
 
-.p-8 {
-  padding: 2rem;
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-2\.5 {
+  padding: 0.625rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-2 {
@@ -845,6 +882,11 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -855,6 +897,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-start {
+  text-align: start;
 }
 
 .text-2xl {
@@ -872,6 +918,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -884,6 +935,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
 }
 
 .text-\[\#4475F2\] {
@@ -901,9 +956,25 @@ video {
   color: rgb(255 168 0 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-md {
@@ -916,6 +987,11 @@ video {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[\#4475F2\] {
+  --tw-shadow-color: #4475F2;
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .shadow-black {
@@ -940,6 +1016,11 @@ video {
 
 .hover\:border:hover {
   border-width: 1px;
+}
+
+.hover\:border-\[\#4475F2\]:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(68 117 242 / var(--tw-border-opacity));
 }
 
 .hover\:border-white:hover {
@@ -981,6 +1062,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.focus\:border-white:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:-bottom-32 {
     bottom: -8rem;
@@ -998,6 +1084,10 @@ video {
     flex-direction: row;
   }
 
+  .sm\:gap-4 {
+    gap: 1rem;
+  }
+
   .sm\:text-start {
     text-align: start;
   }
@@ -1010,6 +1100,11 @@ video {
   .sm\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -1034,6 +1129,10 @@ video {
     display: none;
   }
 
+  .md\:w-\[500px\] {
+    width: 500px;
+  }
+
   .md\:w-\[550px\] {
     width: 550px;
   }
@@ -1050,12 +1149,20 @@ video {
     justify-content: flex-start;
   }
 
+  .md\:justify-center {
+    justify-content: center;
+  }
+
   .md\:justify-around {
     justify-content: space-around;
   }
 
-  .md\:p-4 {
-    padding: 1rem;
+  .md\:justify-evenly {
+    justify-content: space-evenly;
+  }
+
+  .md\:gap-6 {
+    gap: 1.5rem;
   }
 
   .md\:px-4 {
@@ -1093,6 +1200,19 @@ video {
 
   .lg\:items-center {
     align-items: center;
+  }
+
+  .lg\:justify-evenly {
+    justify-content: space-evenly;
+  }
+
+  .lg\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
