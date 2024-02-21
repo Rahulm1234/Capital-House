@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <title>Capital House</title>
+    <title>Capital house</title>
   </head>
   <body>
     <!-- Section for Navbar and hero -->
@@ -137,7 +137,7 @@
         <!-- 1st div for absolute position image icon -->
         <div class="p-4 flex justify-center">
           <img
-            class="w-[280px] sm:w-[290px] md:w-[580px] absolute -top-16 sm:-top-12 md:-top-40 lg:-top-36"
+            class="w-[280px] sm:w-[290px] md:w-[580px] absolute -top-16 sm:-top-12 md:-top-40 lg:-top-20 xl:-top-32"
             src="../res/thumbnail-1.svg"
             alt="thumbnail-1"
           />
@@ -146,15 +146,15 @@
 
         <!-- 2nd div for 3 card view thumbnail -->
         <div
-          class="md:w-full mx-auto flex flex-col gap-8 mt-24 sm:mt-48 md:mt-72 text-center md:justify-between sr:flex-row lg:flex-row"
+          class="md:w-full mx-auto flex flex-col gap-8 mt-36 sm:mt-48 md:mt-72 text-center md:justify-between sr:flex-row lg:flex-row"
         >
           <!-- 1st card view for thumbnail 1 -->
           <div class="flex items-center flex-col gap-4">
             <img src="../res/thumbnail-2.svg" alt="thumbnail-2" />
             <h2 class="text-black font-semibold">Sukuk Issuers</h2>
             <p class="text-[#5E6282]">
-              Sukuk issuer will be authenticated using the existing regulated
-              platforms
+              Sukuk issuer will be authenticated using <br />
+              the existing regulated platforms
             </p>
             <a class="text-primary flex justify-center" href="#"
               >Know more<span class="material-symbols-outlined">
@@ -169,7 +169,8 @@
             <img src="../res/thumbnail-3.svg" alt="thumbnail-3" />
             <h2 class="text-black font-semibold">Sukuk Investors</h2>
             <p class="text-[#5E6282]">
-              Angel investor/Corporations/Digital asset firms/individual owners.
+              Angel investor/Corporations/Digital <br />
+              asset firms/individual owners.
             </p>
             <a class="text-primary flex justify-center" href="#"
               >Know more<span class="material-symbols-outlined">
@@ -182,9 +183,10 @@
           <!-- 3rd card view div for thumbnail 3 -->
           <div class="flex items-center flex-col gap-4">
             <img src="../res/thumbnail-4.svg" alt="thumbnail-4" />
-            <h2 class="text-black font-semibold">Sukuk Investors</h2>
+            <h2 class="text-black font-semibold">Buyers and Sellers</h2>
             <p class="text-[#5E6282]">
-              Angel investor/Corporations/Digital asset firms/individual owners.
+              Tokenized Sukuk holders will have their Smart <br />
+              Wallet Accounts been created within the platform
             </p>
             <a class="text-primary flex justify-center" href="#"
               >Know more<span class="material-symbols-outlined">
@@ -203,10 +205,60 @@
     <!-- Section for full image -->
     <section id="full_image_section">
       <!-- Outer/Main div for image division -->
-      <div class="container mx-auto max-w-[1920px] my-10">
+      <div
+        class="container mx-auto max-w-[1920px] max-h-[1080px] my-10 relative"
+      >
         <!-- Div for image -->
-        <div class="">
-          <img class="" src="../res/fullImage.svg" alt="full_image_section" />
+        <div class="relative">
+          <img
+            class="hidden md:block"
+            src="../res/fullImage.svg"
+            alt="full_image_section"
+          />
+          <div
+            class="p-8 bg-primary md:bg-opacity-80 md:absolute bg-cover inset-0 flex flex-col gap-12 sm:gap-8 lg:gap-16 2xl:gap-20 items-center justify-center"
+          >
+            <div class="">
+              <h1
+                class="block text-white p-4 top-4 text-center font-semibold text-2xl sm:text-3xl lg:text-4xl"
+              >
+                <span class="text-secondary">Capital House</span> Steps for
+                Blockchain Sukuk Trading
+              </h1>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row items-center justify-center gap-8"
+            >
+              <div
+                class="flex h-28 w-28 sm:h-32 sm:w-32 lg:h-44 lg:w-44 items-center justify-center rounded-full border-4 border-secondary"
+              >
+                <p class="text-white text-lg flex text-center">Pre-Trading</p>
+              </div>
+              <div class="flex items-center rotate-90 md:rotate-0">
+                <span class="material-symbols-outlined text-secondary">
+                  arrow_forward
+                </span>
+              </div>
+
+              <div
+                class="flex h-28 w-28 sm:h-32 sm:w-32 lg:h-44 lg:w-44 items-center justify-center rounded-full border-4 border-secondary"
+              >
+                <p class="text-white text-lg flex text-center">Trading</p>
+              </div>
+              <div class="flex items-center rotate-90 md:rotate-0">
+                <span class="material-symbols-outlined text-secondary">
+                  arrow_forward
+                </span>
+              </div>
+
+              <div
+                class="flex h-28 w-28 sm:h-32 sm:w-32 lg:h-44 lg:w-44 items-center justify-center rounded-full border-4 border-secondary"
+              >
+                <p class="text-white text-lg flex text-center">Post-Trading</p>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Div for image Ends here-->
       </div>
@@ -501,7 +553,6 @@
     <script>
       let hamburger = document.getElementById("hamburger");
       let mobileNav = document.getElementById("mobile-nav");
-      console.log(hamburger);
 
       hamburger.addEventListener("click", () => {
         mobileNav.classList.toggle("-translate-x-full");
