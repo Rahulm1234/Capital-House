@@ -22,12 +22,16 @@
         <!-- Nav for navbar -->
         <nav class="flex gap-4 flex-row justify-between py-6 px-8">
           <!-- 1st Div for left side logo -->
-          <div class="flex flex-row">
-            <img src="../res/logo-left.svg" alt="logo-left" />
+          <div class="flex flex-row gap-2">
+            <img
+              class="cursor-pointer"
+              src="../res/logo-left.svg"
+              alt="logo-left"
+            />
             <h1
               class="text-3xl sm:flex sm:flex-row text-white hidden cursor-pointer"
             >
-              Capital <span class="text-secondary">House</span>
+              Capital<span class="text-secondary">House</span>
             </h1>
           </div>
 
@@ -146,7 +150,7 @@
 
         <!-- 2nd div for 3 card view thumbnail -->
         <div
-          class="md:w-full mx-auto flex flex-col gap-8 mt-36 sm:mt-48 md:mt-72 text-center md:justify-between sr:flex-row lg:flex-row"
+          class="md:w-full mx-auto flex flex-col gap-8 mt-36 sm:mt-48 md:mt-72 text-center md:justify-between md:flex-row lg:flex-row"
         >
           <!-- 1st card view for thumbnail 1 -->
           <div class="flex items-center flex-col gap-4">
@@ -216,7 +220,7 @@
             alt="full_image_section"
           />
           <div
-            class="p-8 bg-primary md:bg-opacity-80 md:absolute bg-cover inset-0 flex flex-col gap-12 sm:gap-8 lg:gap-16 2xl:gap-20 items-center justify-center"
+            class="p-4 bg-primary md:bg-opacity-80 md:absolute bg-cover inset-0 flex flex-col gap-12 sm:gap-8 lg:gap-16 2xl:gap-20 items-center justify-center"
           >
             <div class="">
               <h1
@@ -228,17 +232,28 @@
             </div>
 
             <div
-              class="flex flex-col md:flex-row items-center justify-center gap-8"
+              class="flex flex-col md:flex-row items-center justify-center p-10"
             >
               <div
                 class="flex h-28 w-28 sm:h-32 sm:w-32 lg:h-44 lg:w-44 items-center justify-center rounded-full border-4 border-secondary"
               >
                 <p class="text-white text-lg flex text-center">Pre-Trading</p>
               </div>
-              <div class="flex items-center rotate-90 md:rotate-0">
-                <span class="material-symbols-outlined text-secondary">
-                  arrow_forward
-                </span>
+              <div class="flex justify-center rotate-90 md:rotate-0">
+                <svg
+                  class="w-20 h-20 md:w-28 md:h-28 text-secondary"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  ></path>
+                </svg>
               </div>
 
               <div
@@ -246,10 +261,21 @@
               >
                 <p class="text-white text-lg flex text-center">Trading</p>
               </div>
-              <div class="flex items-center rotate-90 md:rotate-0">
-                <span class="material-symbols-outlined text-secondary">
-                  arrow_forward
-                </span>
+              <div class="flex justify-center rotate-90 md:rotate-0">
+                <svg
+                  class="w-20 h-20 md:w-28 md:h-28 text-secondary"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  ></path>
+                </svg>
               </div>
 
               <div
@@ -444,13 +470,16 @@
       >
         <!-- div for left side logo -->
         <div class="flex flex-row gap-4 p-4 sm:items-center">
-          <img
-            src="../res/Capital-House-Footer-Logo.svg"
-            alt="Capital-House-Footer-Logo"
-          />
-          <h1 class="text-[#359BC2] text-nowrap text-3xl">
-            Capital <span class="text-secondary">House</span>
-          </h1>
+          <a href="#"
+            ><img
+              src="../res/Capital-House-Footer-Logo.svg"
+              alt="Capital-House-Footer-Logo"
+          /></a>
+          <a href="#">
+            <h1 class="text-[#359BC2] text-nowrap text-3xl">
+              Capital <span class="text-secondary">House</span>
+            </h1></a
+          >
         </div>
         <!-- div for left side logo Ends here-->
 
@@ -560,5 +589,16 @@
     </script>
 
     <!-- Script Ends here-->
+
+    <!-- Script for Arrow Icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Script for Arrow Icon Ends here-->
   </body>
 </html>
